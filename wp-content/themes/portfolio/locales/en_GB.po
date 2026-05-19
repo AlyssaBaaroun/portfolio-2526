@@ -1,0 +1,156 @@
+# Copyright (C) 2026 HEPL
+# This file is distributed under the same license as the Thème Portfolio 202 theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: Thème Portfolio 202 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/portfolio\n"
+"POT-Creation-Date: 2026-05-19 03:10+0200\n"
+"PO-Revision-Date: 2026-05-19 21:03+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Domain: portfolio\n"
+"X-Poedit-KeywordsList: __hepl\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:4
+msgid "Page erreur de navigation"
+msgstr "Navigation error page"
+
+#: 404.php:11
+msgid ""
+"Enquête échouée &nbsp;!\n"
+"        Aucune trace de cette page..."
+msgstr ""
+"Search failed &nbsp;!\n"
+"        No trace of this page..."
+
+#: 404.php:18
+msgid "Retourner à l’accueil"
+msgstr "Back to the home page"
+
+#: footer.php:27
+msgid "Ressources"
+msgstr "Resources"
+
+#: footer.php:42
+msgid "Retrouvez-moi"
+msgstr "Find me"
+
+#: footer.php:60
+msgid " Alyssa Baaroun. Tous droits réservés."
+msgstr "Alyssa Baaroun. All rights reserved. "
+
+#: footer.php:65
+msgid "/mentions-legales/"
+msgstr "/legal-notices/"
+
+#: footer.php:65
+msgid "Mentions légales"
+msgstr "Legal notices"
+
+#: header.php:2
+msgid "fr"
+msgstr "en"
+
+#: header.php:34
+msgid "Menu de navigation"
+msgstr "Navigation menu"
+
+#: header.php:35
+msgid "Retour à l'accueil"
+msgstr "Back to the home page"
+
+#: single-projects.php:30
+msgid "Explication du projet"
+msgstr "Project Description"
+
+#: single-projects.php:55
+msgid "lien vers le projet"
+msgstr "link to the project"
+
+#: single-projects.php:60
+msgid "Autres projets"
+msgstr "Other projects"
+
+#: template-contact.php:28
+msgid ""
+"Merci !\n"
+"                         Votre message a bien été envoyé."
+msgstr ""
+"Thank you! \n"
+"                         Your message has been sent."
+
+#: template-contact.php:35
+msgid ""
+"Attention ! \n"
+"Merci de corriger les erreurs du formulaire."
+msgstr ""
+"Attention! \n"
+"Please correct the errors in the form."
+
+#: template-contact.php:56
+msgid "Formulaire de contact"
+msgstr "Contact Form"
+
+#: template-contact.php:58
+msgid "Nom *"
+msgstr "Last name *"
+
+#: template-contact.php:66
+msgid "Prénom *"
+msgstr "First name *"
+
+#: template-contact.php:75
+msgid "Adresse mail *"
+msgstr "Email Adress"
+
+#: template-contact.php:84
+msgid "Message *"
+msgstr "Message *"
+
+#: template-contact.php:86
+msgid "Écrivez votre message ici..."
+msgstr "Write your message here..."
+
+#: template-contact.php:92
+msgid "Les champs avec (*) sont à compléter obligatoirement !"
+msgstr "Fields marked with (*) are required!"
+
+#: template-contact.php:98
+msgid "Envoyer"
+msgstr "Submit"
+
+#: template-creations.php:35
+msgid "Filtres de mes projets"
+msgstr "Filters for my projects"
+
+#: template-creations.php:39
+msgid "TOUT"
+msgstr "ALL"
+
+#: template-creations.php:54
+msgid "Mes projets"
+msgstr "My projects"
+
+#: template-mon-univers.php:8
+msgid "Mon univers"
+msgstr "My universe"
+
+#: template-mon-univers.php:40
+msgid "Qui est-elle ?"
+msgstr "Who is she ?"
+
+#~ msgid "Email *"
+#~ msgstr "Email *"
+
+#~ msgid "Tout"
+#~ msgstr "ALL"
+
+#~ msgid "[contact-form-7 id=\"9fb66f2\" title=\"Contact form 1 FR\"]"
+#~ msgstr "[contact-form-7 id=\"9fb66f2\" title=\"Contact form 1\"]"
