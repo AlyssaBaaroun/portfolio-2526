@@ -1,11 +1,16 @@
 @use 'general/reset.css';
 @use 'general/general';
+@use "general/colors";
+@use "general/fonts";
 @use 'general/footer';
 @use 'general/navigation';
-@use 'components/stage';
-@use 'components/cards-formations';
-@use 'components/advantage';
-@use 'components/form';
-@use 'components/cta';
-@use 'components/text-media';
-@use 'components/search';
+@use 'components/front-page';
+@use "components/my-creations";
+@use "components/form";
+@use "components/my-universe";
+@use "components/legal-notices";
+@use "components/erro-page_404";
+@use "components/single-project";
+@use "animations/animation";
+
+

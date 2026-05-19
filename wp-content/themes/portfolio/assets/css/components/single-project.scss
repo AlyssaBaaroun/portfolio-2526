@@ -1,0 +1,110 @@
+.title-page {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  display: block;
+  color: var(--title-color);
+  padding-bottom: 50px;
+
+  @media (min-width: 1200px) {
+    margin-top: 100px;
+    font-size: 6.25rem;
+  }
+}
+
+.project-link {
+
+  &__btn {
+    color: var(--title-color);
+    font-family: var(--font-text);
+    font-weight: bold;
+    font-size: 0.875rem;
+    display: inline-block;
+    padding: 1rem 1.313rem;
+    border: var(--title-color) 0.3em solid;
+    border-radius: 11px;
+    transition: all 0.6s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: var(--title-color);
+      color: var(--background-color);
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.25rem;
+      font-weight: bold;
+      padding: 23px 39px;
+
+    }
+  }
+}
+
+.project {
+  transition: all .3s ease-in;
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 12.5rem;
+    align-items: center;
+    padding-bottom: 50px;
+
+    &:nth-child(odd) {
+      .project__container {
+        order: -1;
+      }
+    }
+  }
+
+  &__title {
+    font-family: var(--font-title);
+    font-size: 24px;
+    color: var(--title-color);
+    padding-bottom: 20px;
+
+    @media (min-width: 1200px) {
+      font-size: 3rem;
+    }
+
+  }
+
+  &__paragraphe {
+    transition: all .3s ease-in;
+    font-family: var(--font-text);
+    font-size: 16px;
+    color: var(--title-color);
+    padding-bottom: 20px;
+
+    @media (min-width: 1200px) {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      line-height: 28px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    min-width: 8.75rem;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s ease-in;
+  }
+
+  &__container-img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    transition: all .3s ease-in;
+    @media (min-width: 1200px) {
+      max-width: 457px;
+      width: 100%;
+      max-height: 300px;
+    }
+  }
+
+}
+
+
+

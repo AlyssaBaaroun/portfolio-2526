@@ -1,0 +1,12 @@
+/*Import de mes polices et des font-weight*/
+:root{
+  --font-title: 'Miskan', 'Helvetica', 'Arial', 'sans-serif';
+  --font-text: 'Helvetica', 'Arial', 'sans-serif';
+}
+
+@font-face {
+  font-family: "Miskan";
+  src: url("../../fonts/Miskan.woff") format('woff');
+  font-style: normal;
+  font-weight: 400;
+}

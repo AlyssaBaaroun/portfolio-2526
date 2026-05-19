@@ -1,0 +1,347 @@
+.header_main {
+  cursor: url("/wp-content/themes/portfolio/assets/img/loop.png"), auto;
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 100px;
+  }
+
+  &__left {
+
+
+    @media (min-width: 744px) and (max-width: 1200px) {
+      max-width: 50%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+
+    @media (min-width: 1200px) {
+      transform: translateX(15rem);
+    }
+  }
+
+  .main-title {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    display: block;
+    color: var(--title-color);
+    line-height: 2.813rem;
+
+    @media (min-width: 1200px) {
+      font-size: 6.25rem;
+      line-height: 80px;
+      width: min-content;
+    }
+
+    &__sub-title {
+      font-family: var(--font-text);
+      font-size: 1.5rem;
+      padding-top: 0.938rem;
+      color: var(--title-color);
+
+
+      @media (min-width: 1200px) {
+        margin-top: 15px;
+        font-size: 3rem;
+        line-height: 55px;
+        font-weight: bold;
+      }
+
+      &__sub-desc {
+        font-family: var(--font-text);
+        color: var(--title-color);
+        font-size: 1rem;
+        font-weight: 500;
+        padding-top: 1.438rem;
+        padding-bottom: 1.438rem;
+
+        @media (min-width: 1200px) {
+          font-size: 1.5rem;
+          font-weight: 500;
+          padding-top: 1.438rem;
+          line-height: 28px;
+          max-width: 31.25rem;
+
+
+        }
+      }
+    }
+  }
+
+  .btn-dicover {
+    color: var(--title-color);
+    font-family: var(--font-text);
+    font-weight: bold;
+    font-size: 0.875rem;
+    display: inline-block;
+    padding: 1rem 1.313rem;
+    border: var(--title-color) 0.3em solid;
+    border-radius: 11px;
+    transition: all 0.6s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: var(--title-color);
+      color: var(--background-color);
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.25rem;
+      font-weight: bold;
+      padding: 23px 39px;
+
+    }
+  }
+}
+
+.folder {
+  &__figure {
+    position: relative;
+    transform: rotate(-15deg);
+
+
+    @media (min-width: 1200px) {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__red {
+    width: 100%;
+    min-width: 350px;
+    transform: translateX(9rem);
+    padding-top: 50px;
+
+    @media (min-width: 1200px) {
+      min-width: 690px;
+      padding-top: 0;
+      transform: translateX(4rem);
+    }
+
+    @media (min-width: 744px) and (max-width: 1200px) {
+      min-width: 450px;
+      padding-top: 0;
+      transform: translateX(22rem);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 11rem;
+    height: auto;
+    top: 18%;
+    left: 71%;
+    transform: rotate(-15deg);
+    z-index: 1;
+
+    @media (min-width: 1200px) {
+      transform: rotate(-15deg);
+      width: 20rem;
+      left: 14.3rem;
+      top: 4rem;
+      border-radius: 10px;
+    }
+
+    @media (min-width: 744px) and (max-width: 1200px) {
+      width: 15rem;
+      height: auto;
+      top: 7%;
+      left: 105%;
+    }
+  }
+
+  .anim-img{
+    transition: transform 0.3s ease;
+
+    &:hover{
+      transform: rotate(-1deg);
+    }
+  }
+
+  &__pin {
+    position: absolute;
+    width: 1.5rem;
+    top: 12%;
+    left: 73%;
+    z-index: 3;
+
+    @media (min-width: 1200px) {
+      width: 3rem;
+      top: .8rem;
+      left: 15.6rem;
+    }
+    @media (min-width: 744px) and (max-width: 1200px) {
+      width: 2.5rem;
+      height: auto;
+      top: 0%;
+      left: 106%;
+    }
+  }
+}
+
+.project-card {
+
+  &__sub-title {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    padding: 2.5rem 1.5rem 0;
+    color: var(--title-color);
+    text-align: center;
+
+    @media (min-width: 1200px) {
+      font-size: 3rem;
+      text-align: left;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 26px; // mettre a 140 droite/gauche en destop et pour le btn mettre a 100 bottom
+    gap: 52px;
+
+    @media (min-width: 1200px) {
+      margin: 100px 140px;
+    }
+
+  }
+
+  &__grid:hover .project-card__content-fp:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9);
+  }
+
+  &__content-fp {
+    width: 300px;
+    padding: 1rem;
+    transition: all .3s ease-out;
+
+    @media (min-width: 1200px) {
+      width: 300px;
+    }
+
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    aspect-ratio: 4/4;
+    max-width: 18.625rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+    @media (min-width: 1200px) {
+      max-width: 37.5rem;
+    }
+
+    &.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+
+  &__pin {
+    position: absolute;
+    top: -0.875rem;
+    left: 1.25rem;
+    width: 20px;
+    z-index: 4;
+  }
+
+  &__back-dark {
+    position: absolute;
+    padding: 40px 40px;
+    inset: 0;
+    background: var(--text-color);
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  &__back-red {
+    position: absolute;
+    padding: 40px 40px;
+    inset: 0;
+    background: var(--title-color);
+    border-radius: 8px;
+    transform: rotate(-10deg);
+    z-index: 1;
+  }
+
+  &__img-content {
+    position: absolute;
+    inset: 0;
+    padding: 0 1.25rem;
+    z-index: 3;
+    overflow: hidden;
+
+    .img-pic {
+      width: 100%;
+      border-radius: 8px;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+  }
+
+  &__title-cards {
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    padding-top: 20px;
+    color: var(--background-color);
+    text-align: center;
+    text-decoration: none;
+
+    @media (min-width: 1200px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .btn-projects {
+    color: var(--title-color);
+    font-family: var(--font-text);
+    font-weight: bold;
+    font-size: 0.875rem;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 1rem 1.313rem;
+    border: var(--title-color) 0.3em solid;
+    border-radius: 11px;
+    transition: all 0.6s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: var(--title-color);
+      color: var(--background-color);
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.25rem;
+      font-weight: bold;
+      padding: 23px 39px;
+      display: block;
+      width: fit-content;
+      margin: 20px auto 0;
+    }
+  }
+
+  // &__showUp {
+  // animation: showUp 1s;
+  //opacity: 1;
+  //}
+
+
+}
