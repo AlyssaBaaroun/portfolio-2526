@@ -1,15 +1,14 @@
+@use "../general/variables" as *;
 .header_main {
   cursor: url("/wp-content/themes/portfolio/assets/img/loop.png"), auto;
-  @media (min-width: 1200px) {
+  @include min($desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 100px;
   }
 
   &__left {
-
-
-    @media (min-width: 744px) and (max-width: 1200px) {
+    @include between($tablet, $desktop) {
       max-width: 50%;
     }
   }
@@ -20,7 +19,7 @@
     align-items: center;
     justify-self: end;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       transform: translateX(15rem);
     }
   }
@@ -32,7 +31,7 @@
     color: var(--title-color);
     line-height: 2.813rem;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 6.25rem;
       line-height: 80px;
       width: min-content;
@@ -45,7 +44,7 @@
       color: var(--title-color);
 
 
-      @media (min-width: 1200px) {
+      @include min($desktop) {
         margin-top: 15px;
         font-size: 3rem;
         line-height: 55px;
@@ -60,14 +59,12 @@
         padding-top: 1.438rem;
         padding-bottom: 1.438rem;
 
-        @media (min-width: 1200px) {
+        @include min($desktop) {
           font-size: 1.5rem;
           font-weight: 500;
           padding-top: 1.438rem;
           line-height: 28px;
           max-width: 31.25rem;
-
-
         }
       }
     }
@@ -91,7 +88,7 @@
       color: var(--background-color);
     }
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 1.25rem;
       font-weight: bold;
       padding: 23px 39px;
@@ -105,8 +102,7 @@
     position: relative;
     transform: rotate(-15deg);
 
-
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       left: 0;
       top: 0;
     }
@@ -118,13 +114,13 @@
     transform: translateX(9rem);
     padding-top: 50px;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       min-width: 690px;
       padding-top: 0;
       transform: translateX(4rem);
     }
 
-    @media (min-width: 744px) and (max-width: 1200px) {
+    @include between($tablet, $desktop) {
       min-width: 450px;
       padding-top: 0;
       transform: translateX(22rem);
@@ -140,7 +136,7 @@
     transform: rotate(-15deg);
     z-index: 1;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       transform: rotate(-15deg);
       width: 20rem;
       left: 14.3rem;
@@ -148,7 +144,7 @@
       border-radius: 10px;
     }
 
-    @media (min-width: 744px) and (max-width: 1200px) {
+    @include between($tablet, $desktop) {
       width: 15rem;
       height: auto;
       top: 7%;
@@ -156,10 +152,10 @@
     }
   }
 
-  .anim-img{
+  .anim-img {
     transition: transform 0.3s ease;
 
-    &:hover{
+    &:hover {
       transform: rotate(-1deg);
     }
   }
@@ -171,12 +167,12 @@
     left: 73%;
     z-index: 3;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       width: 3rem;
       top: .8rem;
       left: 15.6rem;
     }
-    @media (min-width: 744px) and (max-width: 1200px) {
+    @include between($tablet, $desktop) {
       width: 2.5rem;
       height: auto;
       top: 0%;
@@ -186,7 +182,6 @@
 }
 
 .project-card {
-
   &__sub-title {
     font-family: var(--font-title);
     font-size: 1.5rem;
@@ -194,12 +189,11 @@
     color: var(--title-color);
     text-align: center;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 3rem;
       text-align: left;
     }
   }
-
   &__grid {
     display: flex;
     flex-wrap: wrap;
@@ -207,10 +201,9 @@
     margin: 26px; // mettre a 140 droite/gauche en destop et pour le btn mettre a 100 bottom
     gap: 52px;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       margin: 100px 140px;
     }
-
   }
 
   &__grid:hover .project-card__content-fp:not(:hover) {
@@ -223,10 +216,9 @@
     padding: 1rem;
     transition: all .3s ease-out;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       width: 300px;
     }
-
   }
 
   &__item {
@@ -238,7 +230,7 @@
     max-width: 18.625rem;
     transition: transform 0.3s ease, filter 0.3s ease;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       max-width: 37.5rem;
     }
 
@@ -251,8 +243,6 @@
       transform: scale(1.1);
     }
   }
-
-
   &__pin {
     position: absolute;
     top: -0.875rem;
@@ -303,7 +293,7 @@
     text-align: center;
     text-decoration: none;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 2.25rem;
     }
   }
@@ -328,7 +318,7 @@
       color: var(--background-color);
     }
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 1.25rem;
       font-weight: bold;
       padding: 23px 39px;
@@ -337,11 +327,4 @@
       margin: 20px auto 0;
     }
   }
-
-  // &__showUp {
-  // animation: showUp 1s;
-  //opacity: 1;
-  //}
-
-
 }
