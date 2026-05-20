@@ -1,3 +1,4 @@
+@use "../general/variables" as *;
 .title-page {
   font-family: var(--font-title);
   font-size: 3rem;
@@ -5,7 +6,7 @@
   color: var(--title-color);
   padding-bottom: 50px;
 
-  @media (min-width: 1200px) {
+  @include min($desktop) {
     margin-top: 100px;
     font-size: 6.25rem;
   }
@@ -31,7 +32,7 @@
       color: var(--background-color);
     }
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 1.25rem;
       font-weight: bold;
       padding: 23px 39px;
@@ -43,7 +44,7 @@
 .project {
   transition: all .3s ease-in;
 
-  @media (min-width: 1200px) {
+  @include min($desktop) {
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 12.5rem;
@@ -63,7 +64,7 @@
     color: var(--title-color);
     padding-bottom: 20px;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 3rem;
     }
 
@@ -76,7 +77,7 @@
     color: var(--title-color);
     padding-bottom: 20px;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 1.5rem;
       letter-spacing: 2px;
       line-height: 28px;
@@ -97,7 +98,7 @@
     object-fit: cover;
     margin-bottom: 50px;
     transition: all .3s ease-in;
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       max-width: 457px;
       width: 100%;
       max-height: 300px;

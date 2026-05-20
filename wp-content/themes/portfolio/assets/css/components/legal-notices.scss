@@ -1,5 +1,5 @@
+@use "../general/variables" as *;
 .notices {
-
   &__title {
     font-family: var(--font-title);
     font-size: 3rem;
@@ -7,7 +7,7 @@
     color: var(--title-color);
     line-height: 2.813rem;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       margin-top: 100px;
       font-size: 6.25rem;
       padding-bottom: 95px;
@@ -28,12 +28,10 @@
     color: var(--title-color);
     padding-bottom: 20px;
 
-    @media (min-width:1200px) {
+    @include min($desktop) {
       font-size: 3rem;
-
     }
   }
-
   &__text, &__link {
     font-family: var(--font-text);
     font-size: 1rem;
@@ -41,7 +39,7 @@
     color: var(--title-color);
     line-height: 28px;
 
-    @media (min-width:1200px) {
+    @include min($desktop) {
       font-size: 1.5rem;
     }
   }
@@ -49,6 +47,5 @@
     font-weight: bold;
     text-decoration: underline var(--title-color);
   }
-
 }
 

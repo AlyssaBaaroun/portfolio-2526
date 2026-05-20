@@ -1,3 +1,5 @@
+@use "../general/variables" as *;
+
 .header-main {
   cursor: url("/wp-content/themes/portfolio/assets/img/loop.png"), auto;
 
@@ -33,7 +35,7 @@
     transform: rotate(-15deg);
 
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       left: 0;
       top: 0;
     }
@@ -45,13 +47,13 @@
     transform: translateX(9rem);
     padding-top: 50px;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       min-width: 690px;
       padding-top: 0;
       transform: translateX(1rem);
     }
 
-    @media (min-width: 744px) and (max-width: 1200px) {
+    @include between($tablet, $desktop) {
       min-width: 450px;
       padding-top: 0;
       transform: translateX(22rem);
@@ -80,7 +82,7 @@
     padding: 1rem 1rem 3rem;
     border-radius: 5px;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       width: 23rem;
       left: 11.3rem;
       top: 10rem;
@@ -89,7 +91,7 @@
 
     }
 
-    @media (min-width: 744px) and (max-width: 1200px) {
+    @include between($tablet, $desktop) {
       width: 15rem;
       height: auto;
       top: 7%;
@@ -108,7 +110,7 @@
     font-size: 20px;
     z-index: 1;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       position: absolute;
       top: 68%;
       left: 32%;
@@ -116,12 +118,7 @@
       z-index: 1;
     }
 
-    @media (min-width: 744px) and (max-width: 1200px) {
-      //  width: 15rem;
-      //height: auto;
-      //top: 7%;
-      //left: 105%;
-    }
+
   }
 
   &__pen {
@@ -132,7 +129,7 @@
     left: 34%;
     z-index: 1;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       top: 62%;
       left: 4%;
     }
@@ -160,7 +157,7 @@
       border-radius: 10px;
     }
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);
@@ -196,7 +193,7 @@
 
     }
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       &:nth-child(1) {
         grid-area: 1 / 1 / 2 / 2;
 
@@ -243,7 +240,7 @@
     color: var(--title-color);
     line-height: 2.813rem;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 3rem;
     }
   }
@@ -258,7 +255,7 @@
     border: solid 5px var(--text-color);
     border-radius: 10px;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 1.25rem;
       padding: 25px 25px;
 
@@ -281,7 +278,7 @@
     color: var(--title-color);
     line-height: 2.813rem;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 3rem;
       padding-bottom: 3.125rem;
     }
@@ -299,7 +296,7 @@
     transition: all .3s ease-in;
 
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       // grid-template-rows: repeat(2, 1fr);
@@ -348,7 +345,7 @@
       animation-play-state: paused;
     }
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       overflow: hidden;
       width: 100%;
     }
@@ -358,7 +355,7 @@
     display: flex;
     animation: scrolling 5s linear infinite;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       flex-shrink: 0;
       min-width: 100%;
     }
@@ -377,7 +374,7 @@
     align-items: center;
     padding-right: 20px;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       padding-right: 150px;
     }
 
@@ -394,7 +391,7 @@
 
   &__list-name {
     display: none;
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       display: inline-block;
       opacity: 0;
       transform: translateY(-20px);

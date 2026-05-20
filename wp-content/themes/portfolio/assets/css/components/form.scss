@@ -1,6 +1,7 @@
+@use "../general/variables" as *;
 .formulaire-contact {
 
-  @media (min-width: 1200px) {
+  @include min($desktop) {
     margin-top: 100px;
   }
 
@@ -11,7 +12,7 @@
     color: var(--title-color);
     line-height: 2.813rem;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 6.25rem;
       padding-bottom: 30px;
     }
@@ -24,7 +25,7 @@
     color: var(--text-color);
     line-height: 1.125rem;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 1.5rem;
       padding-top: 0;
       line-height: 28px;
@@ -47,7 +48,7 @@
     padding: 0 17px 45px;
     border-radius: 20px;
 
-    @media (min-width: 725px) {
+    @include min($tablet) {
       padding: 0 56px 75px;
     }
 
@@ -56,7 +57,7 @@
       flex-direction: column;
       gap: 1rem;
 
-      @media (min-width: 1200px) {
+      @include min($desktop) {
         padding: 0;
       }
 
@@ -81,7 +82,7 @@
         grid-area: message;
       }
 
-      @media (min-width: 725px) {
+      @include min($tablet) {
         padding: 78px 0;
         display: grid;
         column-gap: 1.5rem;
@@ -103,26 +104,16 @@
     }
 
     &__pin {
-      position: absolute;
-      top: 23%;
-      width: 5.5rem;
-      z-index: 3;
+      display: none;
 
-      @media (max-width: 725px) {
-        top: 23%;
-      }
-
-      @media (min-width: 1200px) {
+      @include min($desktop) {
+        display: unset;
         position: absolute;
         top: -15%;
         width: 6.5rem;
         z-index: 3;
       }
-
-
     }
-
-
     &__label {
       font-family: var(--font-text);
       font-size: 1.25rem;
@@ -130,7 +121,6 @@
       padding-top: 23px;
       display: block;
     }
-
     &__input,
     &__textarea {
       background-color: var(--background-color);
@@ -144,15 +134,13 @@
       border: var(--text-color);
       resize: vertical;
     }
-
     &__required-note {
       font-family: var(--font-text);
       font-size: 0.75rem;
       padding-top: 10px;
       padding: 10px 0 25px;
 
-
-      @media (min-width: 725px) {
+      @include min($tablet) {
         font-size: 1rem;
         grid-column: 1 / span 2;
       }
@@ -184,7 +172,7 @@
         color: var(--text-color);
       }
 
-      @media (min-width: 725px) {
+      @include min($tablet) {
         width: 100%;
         padding: 20px 20px 20px 10px;
         border-radius: 10px;
@@ -201,11 +189,11 @@
     padding-top: 10px;
     text-transform: uppercase;
 
-    @media (min-width: 1200px) {
+    @include min($desktop) {
       font-size: 2rem;
     }
 
-    @media (max-width: 1200px) {
+    @include max($desktop) {
       background-color: var(--text-color);
       color: var(--background-color);
       display: block;
@@ -216,7 +204,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @include min($desktop) {
     .formulaire-contact__container {
       display: grid;
       align-items: start;
@@ -226,14 +214,14 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @include min($desktop) {
     .formulaire-contact__left {
       grid-column: 1/4;
       top: 4.5rem;
     }
   }
 
-  @media (min-width: 1200px) {
+  @include min($desktop) {
     .formulaire-contact__right {
       grid-column: 7/13;
     }
