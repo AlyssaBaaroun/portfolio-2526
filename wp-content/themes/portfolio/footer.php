@@ -15,7 +15,7 @@ $footer = portfolio_get_navigation_links('footer');
             </div>
             <nav class="footer__nav" aria-labelledby="footer-nav-title">
                 <h3 class="footer__title" id="footer-nav-title">Navigation</h3>
-                <ul class="footer__list" role="list">
+                <ul class="footer__list">
                     <?php foreach ($footer as $link) : ?>
                         <li class="footer__item">
                             <a class="footer__link" href="<?= $link->href ?>"><?= $link->label ?></a>
@@ -25,7 +25,7 @@ $footer = portfolio_get_navigation_links('footer');
             </nav>
             <aside class="footer__infos">
                 <h3 class="footer__title"><?= __hepl('Ressources') ?></h3>
-                <ul class="footer__list" role="list">
+                <ul class="footer__list">
                     <?php foreach ($ressources as $link) : ?>
                         <li class="footer__item">
                             <a class="footer__link"
@@ -40,7 +40,7 @@ $footer = portfolio_get_navigation_links('footer');
             </aside>
             <aside class="footer__utils">
                 <h3 class="footer__title"><?= __hepl('Retrouvez-moi') ?></h3>
-                <ul class="footer__list" role="list">
+                <ul class="footer__list">
                     <?php foreach ($social_media as $link) : ?>
                         <li class="footer__item">
                             <a class="footer__link"
@@ -57,9 +57,9 @@ $footer = portfolio_get_navigation_links('footer');
         </div>
         <div class="footer__bottom">
             <p class="footer__copyright">
-                <strong>© 2026</strong><?= __hepl(' Alyssa Baaroun. Tous droits réservés.') ?>
+                <strong>© 2026 </strong><?= __hepl(' Alyssa Baaroun. Tous droits réservés.') ?>
             </p>
-            <ul class="footer__legal" role="list">
+            <ul class="footer__legal">
                 <li class="footer__legal-item">
                     <a class="footer__legal-link"
                        href="<?= __hepl('/mentions-legales/') ?>"><?= __hepl('Mentions légales') ?></a>
