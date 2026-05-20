@@ -5,8 +5,7 @@ const animation = {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.remove('hidden');
-                    entry.target.classList.add('showUp');
+                    entry.target.classList.add('showup');
                 }
             });
         });
