@@ -14,7 +14,7 @@ $errors = hepl_session_get('hepl_contact_form_errors') ?? [];
 <section class="formulaire-contact fadeInLeft ">
 
 
-    <h2 role="heading" id="title" class="formulaire-contact__title "><?= esc_html(get_field('contact')) ?>
+    <h2 role="heading" aria-level="2" id="title" class="formulaire-contact__title "><?= esc_html(get_field('contact')) ?>
     </h2>
 
     <div class="formulaire-contact__container" data-showup="true">
@@ -50,7 +50,6 @@ Merci de corriger les erreurs du formulaire.') ?></p>
                             <use xlink:href="#pin-form"></use>
                         </svg>
                     </div>
-
 
                     <fieldset class="form__champs">
                         <legend class="sro"><?= __hepl('Formulaire de contact') ?></legend>
@@ -98,8 +97,8 @@ Merci de corriger les erreurs du formulaire.') ?></p>
                     <button class="submit" type="submit"><?= __hepl('Envoyer') ?></button>
                 </form>
             </div>
+        </section>
     </div>
-
 </section>
 
 

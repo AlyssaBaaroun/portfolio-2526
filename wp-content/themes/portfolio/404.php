@@ -4,7 +4,7 @@
 <h2 class="sro"><?= __hepl('Page erreur de navigation')?></h2>
     <div class="error-page__svg-404">
         <svg class="error-page__404">
-            <use xlink:href="#404"></use>
+            <use xlink:href="#page404"></use>
         </svg>
     </div>
 
