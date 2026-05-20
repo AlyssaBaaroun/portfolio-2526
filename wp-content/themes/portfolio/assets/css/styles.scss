@@ -3,6 +3,7 @@
 @use "general/colors";
 @use "general/fonts";
 @use 'general/footer';
+@use "general/variables" as*;
 @use 'general/navigation';
 @use 'components/front-page';
 @use "components/my-creations";
@@ -12,5 +13,6 @@
 @use "components/erro-page_404";
 @use "components/single-project";
 @use "animations/animation";
+
 
 
