@@ -1,0 +1,28 @@
+/*
+* Variables for breakpoints
+*/
+$mobile: 370px;
+$navbar: 852px;
+$tablet: 524px;
+$desktop: 1024px;
+
+
+@mixin min($breakpoints){
+  @media (min-width: $breakpoints) {
+    @content
+  }
+}
+
+@mixin max($breakpoints){
+  @media (max-width: $breakpoints) {
+    @content
+  }
+}
+
+@mixin between($min, $max){
+  @media (min-width: $min) and (max-width: $max) {
+    @content
+  }
+}
+
+
