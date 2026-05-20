@@ -7,7 +7,7 @@ $profile_pic = get_field('folder_img');
     <section class="header_main fadeInLeft">
         <h2 class="sro"><?= __hepl('Mon univers') ?></h2>
         <article class="header_main__left  ">
-            <h2 role="heading" id="title" class="main-title"><?= esc_html(get_field('author')) ?></h2>
+            <h2 role="heading" aria-level="2" id="title" class="main-title"><?= esc_html(get_field('author')) ?></h2>
             <h3 class="main-title__sub-title">
                 <?= esc_html(get_field('subtitle')) ?>
             </h3>
@@ -19,7 +19,7 @@ $profile_pic = get_field('folder_img');
         <article class="header_main__right folder">
             <h2 class="sro">Illustrations</h2>
             <figure class="folder__figure">
-                <svg id="folder__red" class="folder__red-crea" data-name="folder__red"
+                <svg  class="folder__red-crea" data-name="folder__red"
                      xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 673.78 830.36">
                     <rect x="26.53" y="30.18" width="548.81" height="742.84" style="fill: #d0c8bc;"/>
@@ -49,7 +49,7 @@ $profile_pic = get_field('folder_img');
     </section>
 
     <section class="journey" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-        <h2 class="journey__title fadeInLeft"><?= esc_html(get_field('educational_journey')) ?></h2>
+        <h2 class="journey__title" data-showup="true"><?= esc_html(get_field('educational_journey')) ?></h2>
 
 
         <?php if (have_rows('my_journey')): ?>
@@ -79,7 +79,7 @@ $profile_pic = get_field('folder_img');
         <?php endif; ?>
     </section>
     <section class="tools">
-        <h2 class="tools__title fadeInLeft"><?= esc_html(get_field('tools_title')) ?></h2>
+        <h2 class="tools__title" data-showup="true"><?= esc_html(get_field('tools_title')) ?></h2>
 
         <div class="tools__desc" data-showup="true">
             <h3 class="sro">Mes différents outils</h3>
@@ -104,7 +104,7 @@ $profile_pic = get_field('folder_img');
                     $name_tool = get_sub_field('name_tool');
                     ?>
                     <li class="tools__list-items">
-                        <a class=tools__link"
+                        <a class="tools__link"
                            href="<?= $link_tools['url'] ?>"
                            title="<?= $link_tools['title'] ?>"
                            target="<?= $link_tools['target'] ?>">
