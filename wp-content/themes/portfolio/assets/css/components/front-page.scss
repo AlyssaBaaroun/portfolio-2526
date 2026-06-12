@@ -1,6 +1,7 @@
 @use "../general/variables" as *;
+
 .header_main {
-  cursor: url("/wp-content/themes/portfolio/assets/img/loop.png"), auto;
+  //cursor: url("/wp-content/themes/portfolio/assets/img/loop.png"), auto;
   @include min($desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,7 +99,7 @@
 }
 
 .folder {
-  &__figure {
+  &__figure-first {
     position: relative;
     transform: rotate(-15deg);
 
@@ -198,23 +199,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 26px; // mettre a 140 droite/gauche en destop et pour le btn mettre a 100 bottom
-    gap: 52px;
+    gap: 30px;
+
 
     @include min($desktop) {
       margin: 100px 140px;
     }
   }
 
-  &__grid:hover .project-card__content-fp:not(:hover) {
+  &__grid:has(.project-card__content-fp:hover) .project-card__content-fp:not(:hover){
     filter: blur(10px);
     transform: scale(0.9);
   }
-
   &__content-fp {
     width: 300px;
     padding: 1rem;
+    margin: 30px;
     transition: all .3s ease-out;
+
+    &:hover {
+      transform: scale(1);
+    }
 
     @include min($desktop) {
       width: 300px;
@@ -233,16 +238,9 @@
     @include min($desktop) {
       max-width: 37.5rem;
     }
-
-    &.visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
+
+
   &__pin {
     position: absolute;
     top: -0.875rem;
@@ -253,7 +251,6 @@
 
   &__back-dark {
     position: absolute;
-    padding: 40px 40px;
     inset: 0;
     background: var(--text-color);
     border-radius: 8px;
@@ -262,7 +259,6 @@
 
   &__back-red {
     position: absolute;
-    padding: 40px 40px;
     inset: 0;
     background: var(--title-color);
     border-radius: 8px;
@@ -327,4 +323,6 @@
       margin: 20px auto 0;
     }
   }
+
+
 }
