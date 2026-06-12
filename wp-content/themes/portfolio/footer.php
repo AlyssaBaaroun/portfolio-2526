@@ -23,7 +23,7 @@ $footer = portfolio_get_navigation_links('footer');
                     <?php endforeach; ?>
                 </ul>
             </nav>
-            <aside class="footer__infos">
+            <div class="footer__infos">
                 <h3 class="footer__title"><?= __hepl('Ressources') ?></h3>
                 <ul class="footer__list">
                     <?php foreach ($ressources as $link) : ?>
@@ -37,8 +37,8 @@ $footer = portfolio_get_navigation_links('footer');
                         </li>
                     <?php endforeach; ?>
                 </ul>
-            </aside>
-            <aside class="footer__utils">
+            </div>
+            <div class="footer__utils">
                 <h3 class="footer__title"><?= __hepl('Retrouvez-moi') ?></h3>
                 <ul class="footer__list">
                     <?php foreach ($social_media as $link) : ?>
@@ -53,7 +53,7 @@ $footer = portfolio_get_navigation_links('footer');
                         </li>
                     <?php endforeach; ?>
                 </ul>
-            </aside>
+            </div>
         </div>
         <div class="footer__bottom">
             <p class="footer__copyright">
