@@ -1,5 +1,3 @@
-console.log('coucou je suis un test');
-
 const animation = {
     init() {
         const observer = new IntersectionObserver((entries) => {
