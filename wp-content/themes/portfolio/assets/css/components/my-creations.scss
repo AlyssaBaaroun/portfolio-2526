@@ -81,10 +81,12 @@
 
     @include min($desktop) {
       width: 500px;
+      margin: 30px;
+
     }
   }
 
-  &__grid:hover .project-card__content:not(:hover) {
+  &__grid:has(.project-card__content:hover) .project-card__content:not(:hover){
     filter: blur(10px);
     transform: scale(0.9);
   }
