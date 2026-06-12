@@ -3,16 +3,24 @@
 body, html {
   overflow-x: hidden;
   background-color: var(--background-color);
-  background-image: url("/wp-content/themes/portfolio/assets/img/paper-texture 1.png");
-  background-blend-mode: luminosity;
+  background-image: url("/wp-content/themes/portfolio/assets/img/paper-texture_bckgrnd.png");
+ //background-blend-mode: luminosity;
+  scroll-behavior: smooth;
 }
+
 html:has(.navigation__burger:checked) {
+
   overflow-y: hidden;
 }
 
 .contenu {
   padding: 0 1.5rem 1.25rem;
-  @media (min-width: 1200px) {
+
+  @include min($desktop) {
+    padding: 0 86px;
+  }
+
+  @include min($tablet) {
     padding: 0 86px;
   }
 }
@@ -63,7 +71,7 @@ html:has(.navigation__burger:checked) {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 2.5rem;
+    gap: 2rem;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -89,6 +97,7 @@ html:has(.navigation__burger:checked) {
     color: var(--text-color);
     font-weight: bold;
   }
+
   &__list-item {
     list-style: none;
   }
@@ -97,7 +106,7 @@ html:has(.navigation__burger:checked) {
     position: relative;
     display: inline-flex;
     align-items: center;
-    color: #630000;
+    color: var(--text-color);
     font-size: 1.15rem;
     line-height: 1.2;
     letter-spacing: -0.01em;
