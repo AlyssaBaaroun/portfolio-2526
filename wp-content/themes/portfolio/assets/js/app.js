@@ -3,7 +3,7 @@ import {settings} from "./settings";
 const anim = {
     init() {
         this.animation();
-    }
+    },
 
     animation() {
         const observer = new IntersectionObserver((entries) => {

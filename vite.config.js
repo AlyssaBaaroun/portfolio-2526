@@ -31,7 +31,7 @@ export default defineConfig({
         manifest: true,
         rollupOptions:{
             input:{
-                js: './wp-content/themes/portfolio/assets/js/main.js',
+                js: './wp-content/themes/portfolio/assets/js/app.js',
                 scss: './wp-content/themes/portfolio/assets/css/styles.scss',
             },
             output: {
