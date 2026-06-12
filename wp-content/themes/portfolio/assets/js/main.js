@@ -1,17 +1,22 @@
-const animation = {
+import {settings} from "./settings";
+
+const anim = {
     init() {
+        this.animation();
+    }
+
+    animation() {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('showup');
+                    entry.target.classList.add(settings.showUp);
                 }
             });
         });
-        document.querySelectorAll('[data-showup="true"]').forEach(element => {
-            element.classList.add('hidden');
+        document.querySelectorAll(settings.toAnimate).forEach(element => {
+            element.classList.add(settings.hidden);
             observer.observe(element);
-
         });
     },
-};
-animation.init();
+}
+anim.init();
