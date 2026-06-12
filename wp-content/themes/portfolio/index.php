@@ -2,5 +2,5 @@
     <?= get_the_title(); ?>
     <?= get_the_content(); ?>
 <?php endwhile; else: ?>
-  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+  <p><?php __hepl('Aucun projet trouvé.'); ?></p>
 <?php endif; ?>
