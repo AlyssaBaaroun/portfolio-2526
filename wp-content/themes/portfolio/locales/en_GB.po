@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thème Portfolio 202 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/portfolio\n"
-"POT-Creation-Date: 2026-05-19 03:10+0200\n"
-"PO-Revision-Date: 2026-05-19 21:03+0200\n"
+"POT-Creation-Date: 2026-05-30 19:11+0200\n"
+"PO-Revision-Date: 2026-05-30 19:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_GB\n"
@@ -58,13 +58,17 @@ msgstr "Legal notices"
 msgid "fr"
 msgstr "en"
 
-#: header.php:34
+#: header.php:33
 msgid "Menu de navigation"
 msgstr "Navigation menu"
 
-#: header.php:35
+#: header.php:34
 msgid "Retour à l'accueil"
 msgstr "Back to the home page"
+
+#: index.php:5
+msgid "Aucun projet trouvé."
+msgstr "No projects found."
 
 #: single-projects.php:30
 msgid "Explication du projet"
@@ -94,35 +98,35 @@ msgstr ""
 "Attention! \n"
 "Please correct the errors in the form."
 
-#: template-contact.php:56
+#: template-contact.php:55
 msgid "Formulaire de contact"
 msgstr "Contact Form"
 
-#: template-contact.php:58
+#: template-contact.php:57
 msgid "Nom *"
 msgstr "Last name *"
 
-#: template-contact.php:66
+#: template-contact.php:65
 msgid "Prénom *"
 msgstr "First name *"
 
-#: template-contact.php:75
+#: template-contact.php:74
 msgid "Adresse mail *"
 msgstr "Email Adress"
 
-#: template-contact.php:84
+#: template-contact.php:83
 msgid "Message *"
 msgstr "Message *"
 
-#: template-contact.php:86
+#: template-contact.php:85
 msgid "Écrivez votre message ici..."
 msgstr "Write your message here..."
 
-#: template-contact.php:92
+#: template-contact.php:91
 msgid "Les champs avec (*) sont à compléter obligatoirement !"
 msgstr "Fields marked with (*) are required!"
 
-#: template-contact.php:98
+#: template-contact.php:97
 msgid "Envoyer"
 msgstr "Submit"
 
