@@ -92,7 +92,7 @@
       "email    email    "
       "message  message  ";
       }
-      @media (min-width: 1200px) {
+      @include min($desktop) {
         padding: 0;
         row-gap: 0;
       }
@@ -109,7 +109,7 @@
       @include min($desktop) {
         display: unset;
         position: absolute;
-        top: -15%;
+        top: -100px;
         width: 6.5rem;
         z-index: 3;
       }
@@ -132,8 +132,11 @@
       border-radius: 10px;
       box-sizing: border-box;
       border: var(--text-color);
+    }
+    &__textarea{
       resize: vertical;
     }
+
     &__required-note {
       font-family: var(--font-text);
       font-size: 0.75rem;
@@ -225,9 +228,7 @@
     .formulaire-contact__right {
       grid-column: 7/13;
     }
-
   }
-
 }
 
 
