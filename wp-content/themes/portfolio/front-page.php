@@ -29,7 +29,7 @@ $projects = new WP_Query($args);
 
     <article class="header_main__right folder ">
         <h2 class="sro">Illustrations</h2>
-        <figure class="folder__figure">
+        <figure class="folder__figure-first">
 
             <svg class="folder__red" data-name="folder__red" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 673.78 830.36">
