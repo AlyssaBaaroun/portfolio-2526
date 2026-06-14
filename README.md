@@ -33,7 +33,7 @@ comme des pièces à conviction que l'utilisateur assemble au fur et à mesure.
 | Outil | Usage |
 |-------|-------|
 | Figma | Design UI & identité visuelle |
-| Miro | Recherche UX & parcours utilisateur |
+| Miro | Recherche UX & parcours utilisateur, mon UX : (https://miro.com/app/board/uXjVHdtgsIY=/?share_link_id=738436269037) | |
 | Prototypes papier | Maquettes basse fidélité |
 
 ---
@@ -79,7 +79,7 @@ like pieces of evidence that the user puts together as they go.
 | Tool | Usage |
 |------|-------|
 | Figma | UI design & visual identity |
-| Miro | UX research & user flows |
+| Miro | UX research & user flows, my UX work : (https://miro.com/app/board/uXjVHdtgsIY=/?share_link_id=738436269037) |
 | Paper prototypes | Low-fidelity wireframes |
 
 ---
