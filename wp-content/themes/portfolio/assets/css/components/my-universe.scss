@@ -63,17 +63,6 @@
     }
   }
 
-  &__img-background {
-    position: absolute;
-    top: 22%;
-    left: 28%;
-    padding: clamp(8.5rem, 8vw, 20.5rem) clamp(7rem, 6vw, 15rem);
-    background: var(--background-color);
-    border-radius: 8px;
-    z-index: 1;
-    transform: rotate(-15deg);
-  }
-
   &__img-universe {
     position: absolute;
     width: 12rem;
