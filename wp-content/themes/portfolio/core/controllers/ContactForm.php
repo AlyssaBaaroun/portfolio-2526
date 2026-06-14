@@ -91,7 +91,7 @@ class ContactForm
 
     protected function getRequiredErrorMessage(string $field): string
     {
-        return 'Le champ ' . $field . ' est obligatoire';
+        return 'Ce champ est obligatoire';
     }
 
     protected function checkEmail($field, $value): bool

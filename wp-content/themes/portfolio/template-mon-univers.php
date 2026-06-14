@@ -58,7 +58,7 @@ $profile_pic = get_field('folder_img');
 
                 <?php while (have_rows('my_journey')) : the_row(); ?>
 
-                    <article class="journey__item" data-showup="true">
+                    <div class="journey__item" data-showup="true">
 
                         <h3 class="sro"><?= esc_html(get_sub_field('name')) ?></h3>
 
@@ -69,7 +69,7 @@ $profile_pic = get_field('folder_img');
                         </dl>
 
 
-                    </article>
+                    </div>
                 <?php endwhile; ?>
             </div>
         <?php endif; ?>

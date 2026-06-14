@@ -29,10 +29,10 @@ if (have_rows('projects')): while (have_rows('projects')) : the_row();
     <section class="project">
         <h2 class="sro"><?= __hepl('Explication du projet') ?></h2>
 
-        <article class="project__infos" data-showup="true">
+        <div class="project__infos" data-showup="true">
             <h3 class="project__title"><?= $title ?></h3>
             <div class="project__paragraphe"><?= $text ?></div>
-        </article>
+        </div>
 
 
         <?php if (!empty($img)): ?>

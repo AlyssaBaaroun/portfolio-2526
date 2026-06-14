@@ -21,7 +21,7 @@ $errors = hepl_session_get('hepl_contact_form_errors') ?? [];
     <div class="formulaire-contact__container" data-showup="true">
 
 
-        <article class="formulaire-contact__left" data-showup="true">
+        <div class="formulaire-contact__left" data-showup="true">
             <h3 class="sro">text explicatif du formulaire de contact</h3>
             <p class="formulaire-contact__sub-title"><?= esc_html(get_field('subtitle_contact')) ?></p>
             <?php if ($feedback): ?>
@@ -36,7 +36,7 @@ $errors = hepl_session_get('hepl_contact_form_errors') ?? [];
                     <?= __hepl('Attention ! 
 Merci de corriger les erreurs du formulaire.') ?></p>
             <?php endif; ?>
-        </article>
+        </div>
 
 
         <section class="formulaire-contact__right" data-showup="true">

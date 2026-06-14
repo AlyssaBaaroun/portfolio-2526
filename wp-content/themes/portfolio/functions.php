@@ -47,8 +47,8 @@ function dw_asset(string $filename): string
       return get_theme_file_uri('public/' . $manifest['wp-content/themes/portfolio/assets/css/styles.scss']['file']);
     }
 
-    if (isset($manifest['wp-content/themes/portfolio/assets/js/main.js']) && $filename === 'js') {
-      return get_theme_file_uri('public/' . $manifest['wp-content/themes/portfolio/assets/js/main.js']['file']);
+    if (isset($manifest['wp-content/themes/portfolio/assets/js/app.js']) && $filename === 'js') {
+      return get_theme_file_uri('public/' . $manifest['wp-content/themes/portfolio/assets/js/app.js']['file']);
     }
   }
 

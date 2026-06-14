@@ -50,13 +50,12 @@ $title = get_field('my_creations');
         </ul>
     </nav>
     <div class="creation__wrapper">
-        <section class="project-card ">
             <h2 class="sro"><?= __hepl('Mes projets') ?></h2>
             <div class="project-card__grid">
 
 
                 <?php if ($projects->have_posts()) : while ($projects->have_posts()): $projects->the_post(); ?>
-                    <article class="project-card__content" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-card__content" itemscope itemtype="https://schema.org/CreativeWork">
                         <h3 class="sro"><?php echo esc_html(get_the_title()); ?></h3>
 
 
@@ -89,14 +88,13 @@ $title = get_field('my_creations');
                                 </figcaption>
                             </figure>
                         </div>
-                    </article>
+                    </div>
                 <?php endwhile;
                     wp_reset_postdata();
                 else: ?>
                     <p> Aucun projet </p>
                 <?php endif; ?>
             </div>
-        </section>
     </div>
 </section>
 <?php get_footer(); ?>

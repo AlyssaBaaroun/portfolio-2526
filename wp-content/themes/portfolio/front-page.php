@@ -64,7 +64,7 @@ $projects = new WP_Query($args);
 
 
         <?php if ($projects->have_posts()) : while ($projects->have_posts()): $projects->the_post(); ?>
-            <article class="project-card__content-fp" itemscope itemtype="https://schema.org/CreativeWork">
+            <div class="project-card__content-fp" itemscope itemtype="https://schema.org/CreativeWork">
                 <h3 class="sro"><?php echo esc_html(get_the_title()); ?></h3>
                 <?php $thumbnail = get_the_post_thumbnail_url(get_the_ID(), 'square-medium'); ?>
 
@@ -94,7 +94,7 @@ $projects = new WP_Query($args);
                         </figcaption>
                     </figure>
                 </div>
-            </article>
+            </div>
         <?php endwhile;
             wp_reset_postdata();
         else: ?>
