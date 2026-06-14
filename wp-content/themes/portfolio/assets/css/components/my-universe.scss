@@ -25,6 +25,7 @@
     font-weight: 500;
     padding-top: 1.438rem;
     padding-bottom: 1.438rem;
+
   }
 }
 
@@ -47,19 +48,17 @@
 
   &__red-crea {
     width: 100%;
-    min-width: 350px;
+    min-width: 21.875rem;
     transform: translateX(9rem);
-    padding-top: 50px;
+    padding-top: 3.125rem;
 
     @include min($desktop) {
-      min-width: 690px;
+      min-width: 43.125rem;
       padding-top: 0;
       transform: translateX(1rem);
     }
 
     @include between($tablet, $desktop) {
-      // padding-top: 0;
-      //transform: translateX(15rem);
       display: none;
     }
   }
@@ -87,10 +86,8 @@
     border-radius: 5px;
 
 
-
     @include min($tablet) {
-      top: 8%;
-      //left: 65%;
+      top: 10%;
       background-color: var(--text-color);
       z-index: unset;
     }
@@ -114,11 +111,11 @@
     left: 68%;
     color: var(--text-color);
     font-family: var(--font-title);
-    font-size: 20px;
+    font-size: 1.25rem;
     z-index: 1;
 
     @include between($tablet, $desktop) {
-     display: none;
+      display: none;
     }
 
     @include min($desktop) {
@@ -176,8 +173,8 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      grid-column-gap: 50px;
-      grid-row-gap: 50px;
+      grid-column-gap: 3.125rem;
+      grid-row-gap: 3.125rem;
       padding: 0;
 
 
@@ -242,14 +239,13 @@
           left: -2.6rem;
         }
       }
-      /* droite */
     }
 
   }
 
   &__title {
     font-family: var(--font-title);
-    padding-bottom: 45px;
+    padding-bottom: 2.813rem;
     font-size: 1.5rem;
     display: block;
     color: var(--title-color);
@@ -266,23 +262,20 @@
     z-index: 2;
     color: var(--text-color);
     position: relative;
-    padding: 15px 0 0 10px;
+    padding: 0.938rem 0 0 0.625rem;
     border: solid 5px var(--text-color);
     border-radius: 10px;
 
     @include min($desktop) {
       font-size: 1.25rem;
-      padding: 25px 25px;
+      padding: 1.563rem;
     }
   }
 }
 
 
 .tools {
-  padding-top: 60px;
-
-
-  // padding: 0 1.5rem;
+  padding-top: 3.75rem;
 
   &__title {
     font-family: var(--font-title);
@@ -305,15 +298,14 @@
     gap: 1.5rem;
     color: var(--title-color);
     line-height: 1.125rem;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
     transition: all .3s ease-in;
-
+    text-wrap: balance;
 
     @include min($desktop) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      // grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 150px;
+      grid-column-gap: 9.375rem;
       font-size: 1.25rem;
       line-height: 28px;
     }

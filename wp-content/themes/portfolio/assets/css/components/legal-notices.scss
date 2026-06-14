@@ -8,17 +8,19 @@
     line-height: 2.813rem;
 
     @include min($desktop) {
-      margin-top: 100px;
+      margin-top: 6.25rem;
       font-size: 6.25rem;
-      padding-bottom: 95px;
+      padding-bottom: 5.938rem;
     }
   }
-
   &__content {
     display: grid;
-    row-gap: 6rem;
+    row-gap: 3rem;
     padding: 2rem 0;
 
+    @include min($desktop) {
+      row-gap: 6rem;
+    }
   }
 
   &__sub-title {
@@ -26,7 +28,7 @@
     font-size: 1.5rem;
     display: block;
     color: var(--title-color);
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 
     @include min($desktop) {
       font-size: 3rem;
@@ -37,7 +39,9 @@
     font-size: 1rem;
     display: block;
     color: var(--title-color);
-    line-height: 28px;
+    line-height: 1.75rem;
+    text-wrap: balance;
+
 
     @include min($desktop) {
       font-size: 1.5rem;

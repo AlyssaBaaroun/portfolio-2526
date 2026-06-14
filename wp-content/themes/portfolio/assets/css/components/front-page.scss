@@ -5,7 +5,7 @@
   @include min($desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 100px;
+    padding-top: 6.25rem;
   }
 
   &__left {
@@ -34,7 +34,7 @@
 
     @include min($desktop) {
       font-size: 6.25rem;
-      line-height: 80px;
+      line-height: 5rem;
       width: min-content;
     }
 
@@ -46,9 +46,9 @@
 
 
       @include min($desktop) {
-        margin-top: 15px;
+        margin-top: 0.938rem;
         font-size: 3rem;
-        line-height: 55px;
+        line-height: 3.438rem;
         font-weight: bold;
       }
 
@@ -59,12 +59,13 @@
         font-weight: 500;
         padding-top: 1.438rem;
         padding-bottom: 1.438rem;
+        text-wrap: balance;
 
         @include min($desktop) {
           font-size: 1.5rem;
           font-weight: 500;
           padding-top: 1.438rem;
-          line-height: 28px;
+          line-height: 1.75rem;
           max-width: 31.25rem;
         }
       }
@@ -92,7 +93,7 @@
     @include min($desktop) {
       font-size: 1.25rem;
       font-weight: bold;
-      padding: 23px 39px;
+      padding: 1.438rem 2.438rem;
 
     }
   }
@@ -111,18 +112,18 @@
 
   &__red {
     width: 100%;
-    min-width: 350px;
+    min-width: 21.875rem;
     transform: translateX(9rem);
-    padding-top: 50px;
+    padding-top: 3.125rem;
 
     @include min($desktop) {
-      min-width: 690px;
+      min-width: 43.125rem;
       padding-top: 0;
       transform: translateX(4rem);
     }
 
     @include between($tablet, $desktop) {
-      min-width: 450px;
+      min-width: 28.125rem;
       padding-top: 0;
       transform: translateX(22rem);
     }
@@ -176,7 +177,7 @@
     @include between($tablet, $desktop) {
       width: 2.5rem;
       height: auto;
-      top: 0%;
+      top: 0;
       left: 106%;
     }
   }
@@ -195,26 +196,28 @@
       text-align: left;
     }
   }
+
   &__grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-
+    gap: 1.875rem;
+    margin-top: 3.125rem ;
 
     @include min($desktop) {
-      margin: 100px 140px;
+      margin: 6.25rem 8.75rem;
     }
   }
 
-  &__grid:has(.project-card__content-fp:hover) .project-card__content-fp:not(:hover){
+  &__grid:has(.project-card__content-fp:hover) .project-card__content-fp:not(:hover) {
     filter: blur(10px);
     transform: scale(0.9);
   }
+
   &__content-fp {
-    width: 300px;
+    width: 18.75rem;
     padding: 1rem;
-    margin: 30px;
+    margin: 1.875rem;
     transition: all .3s ease-out;
 
     &:hover {
@@ -222,7 +225,7 @@
     }
 
     @include min($desktop) {
-      width: 300px;
+      width: 18.75rem;
     }
   }
 
@@ -245,7 +248,7 @@
     position: absolute;
     top: -0.875rem;
     left: 1.25rem;
-    width: 20px;
+    width: 1.25rem;
     z-index: 4;
   }
 
@@ -301,7 +304,7 @@
     font-size: 0.875rem;
     display: block;
     width: fit-content;
-    margin: 20px auto 0;
+    margin: 1.25rem auto 0;
     padding: 1rem 1.313rem;
     border: var(--title-color) 0.3em solid;
     border-radius: 11px;
@@ -323,6 +326,4 @@
       margin: 20px auto 0;
     }
   }
-
-
 }

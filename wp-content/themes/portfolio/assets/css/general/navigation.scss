@@ -4,7 +4,7 @@ body, html {
   overflow-x: hidden;
   background-color: var(--background-color);
   background-image: url("/wp-content/themes/portfolio/assets/img/paper-texture_bckgrnd.png");
- //background-blend-mode: luminosity;
+ //background-blend-mode: luminosity; trop lour pour ma page
   scroll-behavior: smooth;
 }
 
@@ -17,11 +17,11 @@ html:has(.navigation__burger:checked) {
   padding: 0 1.5rem 1.25rem;
 
   @include min($desktop) {
-    padding: 0 86px;
+    padding: 0 5.375rem;
   }
 
   @include min($tablet) {
-    padding: 0 86px;
+    padding: 0 5.375rem;
   }
 }
 
@@ -32,7 +32,7 @@ html:has(.navigation__burger:checked) {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 1rem 86px;
+  padding: 1rem 5.375rem;
   z-index: 1;
   font-family: var(--font-text);
   font-weight: bold;
