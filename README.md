@@ -32,7 +32,7 @@ comme des pièces à conviction que l'utilisateur assemble au fur et à mesure.
 
 | Outil | Usage |
 |-------|-------|
-| Figma | Design UI & identité visuelle |
+| Figma | Design UI & identité visuelle mon UI : (https://www.figma.com/design/qgjacZLY5qENA0vMKBafcY/Portfolio?node-id=0-1&t=IcZLlA2awoQqZyBR-1) |
 | Miro | Recherche UX & parcours utilisateur, mon UX : (https://miro.com/app/board/uXjVHdtgsIY=/?share_link_id=738436269037) | |
 | Prototypes papier | Maquettes basse fidélité |
 
